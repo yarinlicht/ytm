@@ -5,7 +5,7 @@ The 'YouTube Monitor' is a daemon that will poll YouTube's RSS feeds for new
 videos. As new videos are discovered, they will be placed in one or more HTML
 lists for viewing by the user.
 
-The terms and conditions for use of this data is provided in the included
+The terms and conditions for use of this software is provided in the included
 'LICENSE' file.
 The included YouTube logo is seperately copyrighted by it's respective owner.
 
