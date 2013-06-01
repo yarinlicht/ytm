@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<youtubemonitor>
+<paths data="/usr/local/share/ytm/data" cache="/usr/var/tmp/ytm/cache" />
+<defaults list="Example" />
+<list name="Example">
+<highlight string="TechSNAP" channel="jupiterbroadcasting" />
+<channel name="jupiterbroadcasting" interval="8h" description="Tech news" />
+<channel name="lore"                interval="3d" description="Video game backstories" />
+<channel name="nigahiga"            interval="1w" description="Funny stuff" />
+</list>
+</youtubemonitor>

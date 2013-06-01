@@ -1,0 +1,53 @@
+/* Yarin Licht, 2013 Mar 17 */
+* { margin: 0; padding: 0; }
+div, table { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+html, body { width: 100%; height: 100%; }
+body { background-color: #BBB; font-family: Georgia, Serif; }
+body, a { color: #222; }
+a { text-decoration: none; }
+main div { width: 100%; display: inline-block; border: solid 1px black; border-radius: 3px; }
+main div.msg { text-align: center; padding: 2em; background-color: #DDD; }
+.space { display: table; width: 100%; height: 100%; vertical-align: top; overflow: hidden; }
+.space div.left, .space div.center, .space div.right { display: table-cell; }
+.space div.left, .space div.right { width: 10%; }
+.space div.center { width: 80%; }
+.space div.left {
+background-image: linear-gradient(to left, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -moz-linear-gradient(right, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -o-linear-gradient(right, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -webkit-gradient(linear, right top, left top, color-stop(0.3, #BBBBBB), color-stop(1, #FFFFFF));
+background-image: -webkit-linear-gradient(right, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -ms-linear-gradient(right, #BBBBBB 30%, #FFFFFF 100%);
+} .space div.right {
+background-image: linear-gradient(to right, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -moz-linear-gradient(left, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -o-linear-gradient(left, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0.3, #BBBBBB), color-stop(1, #FFFFFF));
+background-image: -webkit-linear-gradient(left, #BBBBBB 30%, #FFFFFF 100%);
+background-image: -ms-linear-gradient(left, #BBBBBB 30%, #FFFFFF 100%);
+} header div { margin: 0.5em 0 1em 0; text-align: center; }
+header div span { font-size: 1.8em; position: relative; top: 0.4em; font-weight: bold; }
+header div span span { font-size: 1.2em; top: 0; }
+header div img { border: black solid 1px; vertical-align: middle; border-radius: 3px; width: 88px; height: 88px; }
+header div div { font-size: 0.9em; margin: 0; }
+footer div { margin: 1em; font-size: 0.7em; text-align: center; color: #999; }
+footer div span { color: #666; }
+table { width: 100%; border-collapse: collapse; box-sizing: border-box; }
+tr td { padding: 0.2em; border-bottom: solid 1px black; }
+tr:last-child td { border-bottom-width: 0; }
+tr td a { width: 100%; display: inline-block; }
+tr { background-color: #DDD; }
+tr.hilite { background-color: #EED; }
+tr:hover { background-color: #EEE; }
+tr.hilite:hover { background-color: #FFD; }
+tr td:first-child { padding-left: 1em; width: 100%; }
+tr td a:hover { text-shadow: 0 0 0.2em #F88; }
+tr td:first-child+td, tr td:first-child+td+td+td, tr td:last-child { white-space: nowrap; text-align: right; font-size: 0.8em; }
+tr td:first-child+td+td {  padding-left: 1em;  padding-right: 1em; }
+tr td:last-child { padding-right: 1em; }
+footer div, tr td { font-family: "Trebuchet MS", Helvetica, sans-serif; }
+tr td:first-child a { position: relative; }
+tr td:first-child a span { visibility: hidden; position: absolute; right: 0; top: -35px; }
+tr td:first-child a:hover span { visibility: visible; }
+tr td:first-child a span img { border: black solid 1px; border-radius: 3px; width: 120px; height: 90px; }
+/* eof */
